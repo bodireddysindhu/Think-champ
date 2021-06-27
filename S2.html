@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+
+<body>
+
+  <h1>CSS Rules</h1>
+<p>CSS rules are made up of a selector and at least one declaration. A selector is the code that selects the HTML to which you want to apply the style rule. We'll be focusing on common selectors in this tutorial, but you can use more than a dozen selector types as you become more proficient at CSS. A declaration is made up of at least one CSS property and related property value. CSS properties define the style:<br>
+
+<span style="background-color: yellow">h1 {color: red;}</span></p>
+
+
+<p>The H1 is the selector for your h1 headers, and the declaration is made up of the color property with a value of red. Simply said, this rule turns all H1 elements red. You'll note that the syntax of the style rule looks different from what you've seen in HTML. The curly braces contain the declarations, each property is followed by a colon, and a semicolon is used after each property. You can have as many properties as you want in a rule.</p>
+
+<h1>Applying CSS:</h1><br>
+<p style="font-size: 20px">Six types of style sheets exist:</p>
+<ul>
+
+<li>Browser style This is the default style sheet within a browser. If you declare no style rules, these defaults are applied.</li>
+
+<li>User style A user can write a style sheet and make it override any styles you create by changing a setting in the browser. These are used infrequently but can be helpful for individuals with special needs, such as low vision. In such a case, the user will create high-contrast, large-font styles that override your own. </li>
+
+<li>Inline style This is style that is used right in the individual element and applied via the style attribute. It can be very useful for one-time styles by element, but it isn't considered ideal.</li>
+
+<li>Embedded style This is style that controls one document and is placed inside the style element within the HTML document.</li>
+
+<li>Linked style This is a style sheet that is linked to an HTML document using the link element in the head of the document. Any document linked to this style sheet gets the styles, and here's where the management power of CSS is found.</li>
+
+<li>Imported style This is similar to linked styles, but it enables you to import styles into a linked style sheet as well as directly into a document. This is useful in workarounds and when managing many documents.</li></ul>
+
+<h1>You'll see examples of these style sheets as we progress throughout the tutorial.</h1>
+
+
+<h2 style="background-color: yellow;font-size: 20px">The Cascade</h2>
+People often wonder where the term cascading comes from. The cascade is an application hierarchy, which is a fancy term for a system of how rules are applied. If you examine the five types of style sheets just introduced, you'll notice that there are numerous means of applying style to the same document.
+
+<p>What if I've got an inline style,</p> an embedded style sheet, and a linked style sheet? The cascade determines how the rules are applied. In the case of style sheet types, user style overrides all other styles; inline style trumps embedded, linked, and imported styles; embedded style takes precedence over inline style; and linked and imported styles are treated equally, applying everywhere any of these other style sheet types are not applied.
+
+<h1 style="color: blue;font-size: 20px">Specificity</h1>
+<ul><li>Finally, if there are conflicts within any of your style sheets that aren't resolved by the cascade, CSS has an algorithm that resolves the conflict. This algorithm is based on how specific a rule is. It's a bit heavy for this discussion but worthy of mention.</li>
+
+<li>Obviously, two pages can't really do justice to any of these topics, so if you're interested in learning more, be sure to look at the Additional Resources security.</li></ul>
+
+</p>
+</body>
+
+</html>
